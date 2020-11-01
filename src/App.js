@@ -17,22 +17,24 @@ class App extends Component {
             position: "relative",
             width: "100%",
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateColumns: "repeat(2, 1fr)",
             placeItems: "center",
-            background: "rgba(0,255,0,0.1)",
           }}
         >
-          <DeviceWrapper width="320" deviceNo="0">
+          <DeviceWrapper width="240" deviceNo="0" id="myBtn">
             <img src={Screenshot} alt="UI" />
           </DeviceWrapper>
           <DeviceWrapper width="320" deviceNo="1">
             <img src={Screenshot8} alt="UI" />
           </DeviceWrapper>
           <DeviceWrapper width="320" deviceNo="2">
-            <video autoPlay loop>
+            <video controls loop>
               <source src={Video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+          </DeviceWrapper>
+          <DeviceWrapper width="320" deviceNo="3">
+            <img src={Screenshot8} alt="UI" />
           </DeviceWrapper>
         </div>
       </div>

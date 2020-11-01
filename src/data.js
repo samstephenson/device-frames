@@ -23,6 +23,13 @@ const devices = [
     heightRatio: 0.704329461,
     aspectRatio: 0.505,
   },
+  {
+    deviceName: "Samsung",
+    image: "https://determined-wright-1c7f0b.netlify.app/Samsung Galaxy S3.png",
+    widthRatio: 0.789473684,
+    heightRatio: 0.78,
+    aspectRatio: 0.55,
+  },
 ];
 
 export default devices;
