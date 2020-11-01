@@ -29,7 +29,7 @@ class App extends Component {
             <img src={Screenshot8} alt="UI" />
           </DeviceWrapper>
           <DeviceWrapper width="320" deviceNo="2">
-            <video autoplay loop controls>
+            <video autoPlay loop>
               <source src={Video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
