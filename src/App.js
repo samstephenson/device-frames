@@ -16,27 +16,45 @@ class App extends Component {
           style={{
             height: "100vh",
             position: "relative",
-            width: "100%",
+            width: "100vw",
             display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
+            gridTemplateColumns: "repeat(2, 560px)",
+            gridTemplateRows: "repeat(2, 560px)",
+            gridGap: 24,
             placeItems: "center",
+            background: "#f9f9f9",
+            padding: "4rem auto",
+            justifyContent: "center",
           }}
         >
-          <DeviceWrapper width="240" deviceNo="0" id="myBtn">
-            <img src={Screenshot} alt="UI" />
-          </DeviceWrapper>
-          <DeviceWrapper width="320" deviceNo="1">
-            <img src={Screenshot8} alt="UI" />
-          </DeviceWrapper>
-          <DeviceWrapper width="320" deviceNo="2">
-            <video controls loop>
-              <source src={Video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </DeviceWrapper>
-          <DeviceWrapper width="320" deviceNo="3">
-            <img src={Android} alt="UI" />
-          </DeviceWrapper>
+          <div
+            style={{
+              width: 400,
+              height: 400,
+            }}
+          >
+            <DeviceWrapper deviceNo="0">
+              <img src={Screenshot} alt="UI" />
+            </DeviceWrapper>
+          </div>
+          {/* <div>
+            <DeviceWrapper deviceNo="1">
+              <img src={Screenshot8} alt="UI" />
+            </DeviceWrapper>
+          </div>
+          <div>
+            <DeviceWrapper deviceNo="2">
+              <video controls loop>
+                <source src={Video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </DeviceWrapper>
+          </div>
+          <div>
+            <DeviceWrapper deviceNo="3">
+              <img src={Android} alt="UI" />
+            </DeviceWrapper>
+          </div> */}
         </div>
       </div>
     );

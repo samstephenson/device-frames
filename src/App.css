@@ -1,13 +1,6 @@
-/* .container {
-  max-height: 80vh;
-  position: relative;
-  width: 100%;
-  display: grid;
-  place-items: center;
+body {
+  background: #eee;
 }
-
-.device {
-  background: url(./screenshot.png) no-repeat center;
-  background-size: contain;
-  max-height: 80vh;
-} */
+.container > div {
+  background: white;
+}
