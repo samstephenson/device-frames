@@ -1,5 +1,6 @@
 import Screenshot from "./screenshot.png";
 import Screenshot8 from "./screenshot8.png";
+import Android from "./android.png";
 import Video from "./video.mov";
 
 import "./App.css";
@@ -34,7 +35,7 @@ class App extends Component {
             </video>
           </DeviceWrapper>
           <DeviceWrapper width="320" deviceNo="3">
-            <img src={Screenshot8} alt="UI" />
+            <img src={Android} alt="UI" />
           </DeviceWrapper>
         </div>
       </div>
