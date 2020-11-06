@@ -37,7 +37,7 @@ class App extends Component {
               <img src={Screenshot} alt="UI" />
             </DeviceWrapper>
           </div>
-          {/* <div>
+          <div>
             <DeviceWrapper deviceNo="1">
               <img src={Screenshot8} alt="UI" />
             </DeviceWrapper>
@@ -54,7 +54,7 @@ class App extends Component {
             <DeviceWrapper deviceNo="3">
               <img src={Android} alt="UI" />
             </DeviceWrapper>
-          </div> */}
+          </div>
         </div>
       </div>
     );
