@@ -22,7 +22,7 @@ class App extends Component {
             gridTemplateRows: "repeat(2, 560px)",
             gridGap: 24,
             placeItems: "center",
-            background: "#f9f9f9",
+            background: "#444",
             padding: "4rem auto",
             justifyContent: "center",
           }}
