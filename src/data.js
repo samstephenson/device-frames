@@ -7,8 +7,14 @@ const devices = [
       "iphone11pro",
       "iphone 11pro",
     ],
-    image:
-      "https://determined-wright-1c7f0b.netlify.app/Apple iPhone 11 Pro Space Grey.png",
+    style: [
+      {
+        default,
+        name: "Space Grey",
+        image:
+          "https://determined-wright-1c7f0b.netlify.app/Apple iPhone 11 Pro Space Grey.png",
+      },
+    ],
     widthRatio: 0.812274368,
     heightRatio: 0.903560831,
     aspectRatio: 0.513724036,
@@ -17,13 +23,12 @@ const devices = [
     deviceName: ["iPhone 8", "iPhone SE", "SE", "iPhone 7", "iPhone 6"],
     style: [
       {
-        id: 1,
+        default,
         name: "space grey",
         image:
           "https://determined-wright-1c7f0b.netlify.app/Apple iPhone 8 Space Grey.png",
       },
       {
-        id: 2,
         name: "silver",
         image:
           "https://determined-wright-1c7f0b.netlify.app/Apple iPhone 8 Silver.png",
@@ -35,7 +40,14 @@ const devices = [
   },
   {
     deviceName: "Samsung",
-    image: "https://determined-wright-1c7f0b.netlify.app/Samsung Galaxy S3.png",
+    style: [
+      {
+        default,
+        name: "white",
+        image:
+          "https://determined-wright-1c7f0b.netlify.app/Samsung Galaxy S3.png",
+      },
+    ],
     widthRatio: 0.782608696,
     heightRatio: 0.761904762,
     aspectRatio: 0.5625,
