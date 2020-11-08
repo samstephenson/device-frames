@@ -17,29 +17,12 @@ class DeviceWrapper extends Component {
       <div
         className="device"
         style={{
-          width: "auto",
-          height: "auto",
-          maxWidth: "100%",
-          maxHeight: "100%",
-          position: "relative",
           display: "grid",
           gridTemplateColumns: "1fr",
           gridTemplateRows: "1fr",
           placeItems: "center",
-          alignSelf: "stretch",
         }}
       >
-        <img
-          alt="device frame dummy for auto-sizing"
-          src={device.image}
-          width="auto"
-          height="auto"
-          style={{
-            maxHeight: "100%",
-            maxWidth: "100%",
-            gridArea: "1/1/2/2",
-          }}
-        />
         <div
           className="screen"
           style={{
@@ -57,11 +40,10 @@ class DeviceWrapper extends Component {
           width="auto"
           height="auto"
           style={{
-            pointerEvents: "none",
+            gridArea: "1/1/2/2",
             maxHeight: "100%",
             maxWidth: "100%",
-            gridArea: "1/1/2/2",
-            position: "absolute",
+            pointerEvents: "none",
           }}
           alt="device frame"
         />

@@ -18,8 +18,8 @@ class App extends Component {
             position: "relative",
             width: "100vw",
             display: "grid",
-            gridTemplateColumns: "repeat(2, 560px)",
-            gridTemplateRows: "repeat(2, 560px)",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            gridTemplateRows: "repeat(2, 1fr)",
             gridGap: 24,
             placeItems: "center",
             background: "#444",
@@ -28,13 +28,13 @@ class App extends Component {
           }}
         >
           <div
-            style={{
-              width: 400,
-              height: 400,
-            }}
+          // style={{
+          //   width: 400,
+          //   height: 400,
+          // }}
           >
             <DeviceWrapper deviceNo="0">
-              <img src={Screenshot} alt="UI" />
+              <img width="375" src={Screenshot} alt="UI" />
             </DeviceWrapper>
           </div>
           {/* <div>
