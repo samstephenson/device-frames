@@ -33,7 +33,7 @@ class App extends Component {
           //   height: 400,
           // }}
           >
-            <DeviceWrapper deviceNo="0" type="iphone12">
+            <DeviceWrapper deviceNo="0" type="iphone12" style="test">
               <img width="375" src={Screenshot} alt="UI" />
             </DeviceWrapper>
           </div>

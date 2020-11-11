@@ -4,9 +4,15 @@ const devices = [
     style: [
       {
         default: true,
-        name: "Space Grey",
+        name: "spacegrey",
         image:
           "https://determined-wright-1c7f0b.netlify.app/Apple iPhone 11 Pro Space Grey.png",
+      },
+      {
+        default: false,
+        name: "test",
+        image:
+          "https://determined-wright-1c7f0b.netlify.app/Apple iPhone 8 Silver.png",
       },
     ],
     widthRatio: 0.812274368,

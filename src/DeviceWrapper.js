@@ -4,14 +4,21 @@ import devices from "./data";
 
 class DeviceWrapper extends Component {
   render() {
-    const device = devices.filter((value) => {
-      return value.deviceName === this.props.type;
+    // Get chosen device object
+    const device = devices.filter((i) => {
+      return i.deviceName === this.props.type;
     });
 
-    console.log("Device is " + JSON.stringify(device, null, 4));
+    //Get chosen device style
+    const style = device[0].style.filter((i) => {
+      return i.name === this.props.style;
+    });
 
-    const screenXPadding = ((1 - device.widthRatio) / 2) * 100;
-    const screenYPadding = ((1 - device.heightRatio) / 2) * 100;
+    console.log("Device is " + JSON.stringify(device[0], null, 4));
+    console.log("Style is " + JSON.stringify(style[0], null, 4));
+
+    const screenXPadding = ((1 - device[0].widthRatio) / 2) * 100;
+    const screenYPadding = ((1 - device[0].heightRatio) / 2) * 100;
     const screenYPaddingShift = 0.6;
 
     console.log("X:" + screenXPadding);
@@ -40,7 +47,7 @@ class DeviceWrapper extends Component {
           {this.props.children}
         </div>
         <img
-          // src={device.image}
+          src={style[0].image}
           width="auto"
           height="auto"
           style={{
