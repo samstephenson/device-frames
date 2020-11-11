@@ -4,23 +4,26 @@ import devices from "./data";
 
 class DeviceWrapper extends Component {
   render() {
+    // Make device name prop lowercase
+    const deviceNameProp = this.props.type.split(" ").join("").toLowerCase();
     // Get chosen device object
     const device = devices.filter((i) => {
-      return i.deviceName === this.props.type;
+      return i.deviceName === deviceNameProp;
     });
+    console.log("Device is " + JSON.stringify(device[0], null, 4));
 
+    //Make style prop lowercase
+    const styleNameProp = this.props.style.split(" ").join("").toLowerCase();
     //Get chosen device style
     const style = device[0].style.filter((i) => {
-      return i.name === this.props.style;
+      return i.name === styleNameProp;
     });
-
-    console.log("Device is " + JSON.stringify(device[0], null, 4));
     console.log("Style is " + JSON.stringify(style[0], null, 4));
 
+    // Image padding variables
+    const screenYPaddingShift = 0.6;
     const screenXPadding = ((1 - device[0].widthRatio) / 2) * 100;
     const screenYPadding = ((1 - device[0].heightRatio) / 2) * 100;
-    const screenYPaddingShift = 0.6;
-
     console.log("X:" + screenXPadding);
     console.log("Y:" + screenYPadding);
 
