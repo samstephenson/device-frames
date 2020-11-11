@@ -1,7 +1,7 @@
 import Screenshot from "./screenshot.png";
-import Screenshot8 from "./screenshot8.png";
-import Android from "./android.png";
-import Video from "./video.mov";
+// import Screenshot8 from "./screenshot8.png";
+// import Android from "./android.png";
+// import Video from "./video.mov";
 
 import "./App.css";
 import { Component } from "react";
@@ -33,11 +33,11 @@ class App extends Component {
           //   height: 400,
           // }}
           >
-            <DeviceWrapper deviceNo="0">
+            <DeviceWrapper deviceNo="0" type="iphone12">
               <img width="375" src={Screenshot} alt="UI" />
             </DeviceWrapper>
           </div>
-          <div>
+          {/* <div>
             <DeviceWrapper deviceNo="1">
               <img src={Screenshot8} alt="UI" />
             </DeviceWrapper>
@@ -54,7 +54,7 @@ class App extends Component {
             <DeviceWrapper deviceNo="3">
               <img src={Android} alt="UI" />
             </DeviceWrapper>
-          </div>
+          </div> */}
         </div>
       </div>
     );

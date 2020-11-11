@@ -1,15 +1,9 @@
 const devices = [
   {
-    deviceName: [
-      "iPhone 11 Pro",
-      "iPhone",
-      "iPhone 11",
-      "iphone11pro",
-      "iphone 11pro",
-    ],
+    deviceName: "iphone12",
     style: [
       {
-        default,
+        default: true,
         name: "Space Grey",
         image:
           "https://determined-wright-1c7f0b.netlify.app/Apple iPhone 11 Pro Space Grey.png",
@@ -20,10 +14,10 @@ const devices = [
     aspectRatio: 0.513724036,
   },
   {
-    deviceName: ["iPhone 8", "iPhone SE", "SE", "iPhone 7", "iPhone 6"],
+    deviceName: "iphone8",
     style: [
       {
-        default,
+        default: true,
         name: "space grey",
         image:
           "https://determined-wright-1c7f0b.netlify.app/Apple iPhone 8 Space Grey.png",
@@ -39,10 +33,10 @@ const devices = [
     aspectRatio: 0.505,
   },
   {
-    deviceName: "Samsung",
+    deviceName: "samsung",
     style: [
       {
-        default,
+        default: true,
         name: "white",
         image:
           "https://determined-wright-1c7f0b.netlify.app/Samsung Galaxy S3.png",
