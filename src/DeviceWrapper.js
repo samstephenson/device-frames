@@ -6,17 +6,22 @@ class DeviceWrapper extends Component {
   render() {
     // Make device name prop lowercase
     const deviceNameProp = this.props.type.split(" ").join("").toLowerCase();
+
     // Get chosen device object
     const device = devices.filter((i) => {
-      return i.deviceName === deviceNameProp;
+      return i.id === deviceNameProp;
     });
     console.log("Device is " + JSON.stringify(device[0], null, 4));
 
     //Make style prop lowercase
-    const styleNameProp = this.props.style.split(" ").join("").toLowerCase();
+    const styleNameProp = this.props.deviceStyle
+      .split(" ")
+      .join("")
+      .toLowerCase();
+
     //Get chosen device style
-    const style = device[0].style.filter((i) => {
-      return i.name === styleNameProp;
+    const style = device[0].deviceStyle.filter((i) => {
+      return i.id === styleNameProp;
     });
     console.log("Style is " + JSON.stringify(style[0], null, 4));
 
@@ -24,8 +29,8 @@ class DeviceWrapper extends Component {
     const screenYPaddingShift = 0.6;
     const screenXPadding = ((1 - device[0].widthRatio) / 2) * 100;
     const screenYPadding = ((1 - device[0].heightRatio) / 2) * 100;
-    console.log("X:" + screenXPadding);
-    console.log("Y:" + screenYPadding);
+    // console.log("X:" + screenXPadding);
+    // console.log("Y:" + screenYPadding);
 
     return (
       <div
@@ -59,7 +64,7 @@ class DeviceWrapper extends Component {
             maxWidth: "100%",
             pointerEvents: "none",
           }}
-          alt="device frame"
+          alt={device[0].deviceName + " device frame"}
         />
       </div>
     );

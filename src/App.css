@@ -1,8 +1,6 @@
 body {
-  background: #eee;
+  background: #f6f6f6;
 }
-.container > div {
-  background: white;
-}
+
 .screen > * {
 }
